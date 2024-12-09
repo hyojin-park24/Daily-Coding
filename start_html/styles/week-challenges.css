@@ -1,6 +1,15 @@
+header {
+    margin-bottom: 36px;
+}
+
 h1 {
     font-size: 64px;
     color: rgb(71,62,62);
+    margin: 12px 0;
+}
+
+header p {
+    margin-bottom : 36px;
 }
 
 a{
@@ -8,6 +17,7 @@ a{
     background-color: rgb(167,1,78);
     color: white;
     border-radius: 4px;
+    padding : 12px 48px;
 }
 
 a:hover{
@@ -17,10 +27,28 @@ a:hover{
 
 ol{
     list-style: none;
+    width: 500px;
+    margin: 36px auto 0 auto;
+    padding: 0;
 }
 
 li{
     background-color: rgb(223, 136, 124);
     border-radius: 6px;
     margin : 32px;
+    padding: 16px;
+}
+
+h2 {
+    font-family: 'oswald', sans-serif;
+    color: rgb(78,13,5);
+}
+
+main p {
+    margin: 12px;
+    color: rgb(71, 29, 2);
+}
+
+.highlight-class{
+    background-color : rgb(238, 116, 102);
 }
