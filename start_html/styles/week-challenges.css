@@ -9,8 +9,9 @@ h1 {
 }
 
 header p {
-    margin-bottom : 36px;
+    margin: 12px 0;
 }
+
 
 a{
     font-size: 42px;
@@ -18,6 +19,8 @@ a{
     color: white;
     border-radius: 4px;
     padding : 12px 48px;
+    display: inline-block;
+    margin : 12px 0;
 }
 
 a:hover{
@@ -37,6 +40,7 @@ li{
     border-radius: 6px;
     margin : 32px;
     padding: 16px;
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.2);
 }
 
 h2 {
