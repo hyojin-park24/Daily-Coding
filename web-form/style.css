@@ -1,14 +1,58 @@
 body {
     background-color: rgb(30, 30, 30);
-    margin: 8rem;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    margin: 30rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(50, 50, 50);
 }
 
 input {
-    width: 20rem;
+    width: 100%;
     display: block;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(84,84, 84);
+}
+
+input:focus {
+    background-color: rgb(219, 190, 253);
+    color: rgb(32, 5, 63);
+    border: rgb(32, 5, 63);
 }
 
 button {
     display: block;
+    font: inherit;
+    background-color: rgb(32, 5, 63);
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid rgb(32, 5, 63);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(63, 10, 123);
+}
+
+.form-control-inline {
+    display: flex;
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
 }
