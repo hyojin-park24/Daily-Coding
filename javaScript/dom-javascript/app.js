@@ -14,26 +14,35 @@
 
 // 1.
 //let h1Element = document.getElementsByClassName('intro-text');
-let h1Element = document.body.firstElementChild;
-h1Element = document.body.children[0];
+// let h1Element = document.body.firstElementChild;
+// h1Element = document.body.children[0];
+//
+// console.dir(h1Element);
+//
+// // 2.
+// console.dir(h1Element.parentElement);       // 부모 요소 엑세스
+//
+// console.dir(h1Element.previousElementSibling);     // 형제 요소 엑세스
+// console.dir(h1Element.nextElementSibling);  // 형제 요소 엑세스
+//
+// // 3.
+// h1Element = document.getElementById('first-title');
+//
+// console.dir(h1Element);
+//
+// // 4.
+// let secondParagraphElement = document.querySelector('.second-paragraph');
+//
+// console.dir(secondParagraphElement);
+//
+// // 5.
+// secondParagraphElement.textContent = 'Change Text!';
 
-console.dir(h1Element);
+// ADD AN ELEMENT
 
-// 2.
-console.dir(h1Element.parentElement);       // 부모 요소 엑세스
+let newAnchorElement  = document.createElement('a');    // 메모리에만 저장 되어있음
+newAnchorElement.href = 'https://google.com';
+newAnchorElement.textContent = 'Leads to Google!';
 
-console.dir(h1Element.previousElementSibling);     // 형제 요소 엑세스
-console.dir(h1Element.nextElementSibling);  // 형제 요소 엑세스
-
-// 3.
-h1Element = document.getElementById('first-title');
-
-console.dir(h1Element);
-
-// 4.
-let secondParagraphElement = document.querySelector('.second-paragraph');
-
-console.dir(secondParagraphElement);
-
-// 5.
-secondParagraphElement.textContent = 'Change Text!';
+let firstParagraph = document.querySelector('.second-paragraph');
+firstParagraph.append(newAnchorElement);
