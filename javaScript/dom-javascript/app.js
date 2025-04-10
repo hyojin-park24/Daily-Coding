@@ -46,3 +46,16 @@ newAnchorElement.textContent = 'Leads to Google!';
 
 let firstParagraph = document.querySelector('.second-paragraph');
 firstParagraph.append(newAnchorElement);
+
+// REMOVE ELEMENTS
+
+let firstH1Element = document.querySelector('h1');
+
+
+firstH1Element.remove();
+
+// firstH1Element.parentElement.removeChild(firstH1Element);   // for older browser (window explore)
+
+// MOVE ELEMENTS
+
+firstParagraph.parentElement.append(firstParagraph);
